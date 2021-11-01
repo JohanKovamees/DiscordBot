@@ -23,4 +23,4 @@ async def on_message(message):
     if message.content.startswith('Trash'):
         await message.channel.send('NO U')
 
-client.run('OTA0NDc3NTgzMDUwMTQ5OTIw.YX8GZA.ZWpHR0BxYfdGD4KNLa4nEGnGKas')
+client.run('')
