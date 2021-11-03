@@ -1,8 +1,11 @@
 import discord
 import logging
+import os
 
 logging.basicConfig(level=logging.INFO)
-
+TOKEN = (os.environ['TOKEN'])
+print('The app token is:')
+print(TOKEN)
 client = discord.Client()
 
 @client.event
@@ -23,4 +26,4 @@ async def on_message(message):
     if message.content.startswith('Trash'):
         await message.channel.send('NO U')
 
-client.run('')
+client.run(TOKEN)
